@@ -4,7 +4,7 @@ function size(range: { min: number, max: number } = { min: undefined, max: undef
   let value: number;
   return (target: any, propertyKey: string | symbol) => {
     // Store the definition result
-    const update = changeProperty(target, propertyKey,
+    changeProperty(target, propertyKey,
       {
         configurable: true,
         enumerable: true,
@@ -15,8 +15,6 @@ function size(range: { min: number, max: number } = { min: undefined, max: undef
           else value = newValue;
         },
       });
-
-    if (!update) throw new Error('Unable to update property');
   };
 }
 

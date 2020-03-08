@@ -4,7 +4,7 @@ function minimum(min: number = 0) {
   let value: number;
   return (target: any, propertyKey: string | symbol) => {
     // Store the definition result
-    const update = changeProperty(target, propertyKey,
+    changeProperty(target, propertyKey,
       {
         configurable: true,
         enumerable: true,
@@ -14,8 +14,6 @@ function minimum(min: number = 0) {
           else value = newValue;
         },
       });
-
-    if (!update) throw new Error('Unable to update property');
   };
 }
 
