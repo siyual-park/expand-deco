@@ -1,0 +1,29 @@
+{
+  "name": "expand-deco",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "prepare": "npm run build",
+    "lint": "eslint '**/*.js' --quiet --fix && eslint '**/*.ts' --quiet --fix",
+    "build": "tsc"
+  },
+  "author": "Si-Yual Park",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
