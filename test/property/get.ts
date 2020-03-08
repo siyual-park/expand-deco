@@ -1,4 +1,4 @@
-import get = require('../../lib/property/get');
+import get = require('../../lib/object-property/get');
 
 class Greeter {
   @get(() => 'World!')

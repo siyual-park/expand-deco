@@ -1,4 +1,4 @@
-import enumerable = require('../../lib/property/enumerable');
+import enumerable = require('../../lib/object-property/enumerable');
 
 class Greeter {
   greeting: string;
